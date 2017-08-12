@@ -1,0 +1,81 @@
+.albums {
+    width: 15%;
+    height: 100%;
+    float: left;
+    border-right: 1px #000 solid;
+    overflow: scroll;
+}
+
+.lyrics {
+  width:84%;
+  height:100%;
+  overflow-y: scroll;
+  background: #eee;
+}
+.lyrics pre {
+  width: 100%;
+  word-wrap: break-word;
+
+}
+
+.album-list img{
+  max-width: 150px;
+  margin:2px auto;
+  display: block;
+}
+.album-list h3 {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 800;
+}
+.songlist {
+  text-align: left;
+  display:none;
+}
+
+.coverart-detail{
+  max-width: 250px;
+  margin: 10px;
+  display: block;
+  float:left;
+}
+
+.part {
+  text-align:left;
+  margin:5px 10px;
+  font-size: 1.5em;
+}
+
+.part.chorus {
+  font-weight:800;
+}
+.part.bridge {
+  font-style: italic;
+}
+.lyric-detail{
+  display:none;
+}
+.lyric-detail h1 {
+  margin:0px;
+}
+.lyric-detail .infos {
+  margin : 0px 0 80px 0;
+}
+.songlist li {
+    list-style: none;
+}
+.songlist li a {
+    color: #fff;
+}
+
+.album-detail, .lyric-detail, .lyrics{
+  background: #000;
+}
+
+pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
