@@ -66,6 +66,9 @@ $bustedorange: #e59825;
 .g-menu-item-title:hover {
     color: $bustedorange;
 }
+.button.button-outline:hover {
+  color:$bustedorange;
+}
 
 @media all and (max-width: $breakpoints-large-desktop-container) and (min-width: $breakpoints-tablet-container) {
   .g-home-particles.g-helium-style #g-header {
