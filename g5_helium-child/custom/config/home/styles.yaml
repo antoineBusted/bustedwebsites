@@ -1,0 +1,4 @@
+preset: preset1
+header:
+  background-image: 'gantry-media://header/luca-bravo-207676-web.jpg'
+  background-overlay: disabled
