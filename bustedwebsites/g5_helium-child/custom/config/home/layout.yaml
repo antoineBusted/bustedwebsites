@@ -1,0 +1,188 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: home_-_particles
+  timestamp: 1499346246
+layout:
+  navigation: {  }
+  /header/:
+    -
+      - custom-2105
+  /intro/:
+    -
+      - custom-5807
+    -
+      - custom-6213
+  /features/:
+    -
+      - custom-8988
+  /utility/:
+    -
+      - contenttabs-3854
+  /above/:
+    -
+      - contentcubes-7850
+  /testimonials/:
+    -
+      - custom-7658
+  /expanded/: {  }
+  /container-main/:
+    -
+      -
+        'mainbar 75': {  }
+      -
+        'sidebar 25': {  }
+  footer: {  }
+  offcanvas: {  }
+structure:
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  header:
+    attributes:
+      boxed: ''
+      class: g-flushed
+  intro:
+    type: section
+    attributes:
+      boxed: ''
+  features:
+    type: section
+    attributes:
+      boxed: ''
+  utility:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+  above:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+  testimonials:
+    type: section
+    attributes:
+      boxed: ''
+  expanded:
+    type: section
+    attributes:
+      boxed: ''
+  mainbar:
+    type: section
+    subtype: main
+  sidebar:
+    type: section
+    subtype: aside
+  container-main:
+    attributes:
+      boxed: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  offcanvas:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+content:
+  custom-2105:
+    title: 'Custom HTML'
+    attributes:
+      html: "<h1>Busted Websites</h1>\n<h3>We Build Websites</h3>\n<a target=\"_self\" class=\"g-owlcarousel-item-button button button-outline\" href=\"http://gantry.org/downloads\">\n                                                Download Now\n                                            </a>"
+      twig: '0'
+  custom-5807:
+    title: Intro
+    attributes:
+      html: "<div class=\"fp-intro\">\n    <h2 class=\"g-title\">Nos références parlent d'elles-même</h2>\n    <p>Nous saurons trouver la solution la plus adaptée à vos besoins.</p>\n    <div class=\"ipad-mockup\">\n        <img src=\"gantry-media://intro/mockup.png\" alt=\"\" />\n    </div>\n</div>"
+    block:
+      id: portfolio
+      variations: center
+  custom-6213:
+    title: Portfolio
+    attributes:
+      html: '[pap_portfolio grid=4]'
+      filter: '1'
+  custom-8988:
+    title: 'Custom HTML'
+    attributes:
+      html: "<p class=\"tagline\">Nos solutions sont généralement basées sur des CMS réputés, avec un soin particulier pour le Référencement SEO et pour la protection de vos données.</p>\n<div class=\"icons-line\">\n <i class=\"fa fa-wordpress\"></i> + <i class=\"fa fa-shield\"></i> + <i class=\"fa fa-search\"></i> = <i class=\"fa fa-rocket\"></i>\n</div>"
+    block:
+      variations: title-center
+  contenttabs-3854:
+    title: 'Content Tabs'
+    attributes:
+      items:
+        -
+          content: "<p>Développeur d'application web sous divers technologies depuis le bug de l'an 2000. Je suis aussi musicien et producteur musical. <br/> \nSi vous souhaitez en savoir plus sur moi, vous pouvez visiter mon profil Linkedin</p>\n</p>\n<div class=\"linkedin\">\n<a href=\"https://www.linkedin.com/in/antoine-sirven/\" target=\"_blank\"><img class=\"linkedin avatar\" alt=\"Antoine Sirven Gabiache\" src=\"https://bustedwebsites.fr/wp-content/uploads/2017/08/antoinesirvengabiache.jpg\"/>&nbsp;Antoine Sirven Gabiache</a>\n</div>"
+          title: 'Qui suis-je'
+        -
+          content: "<p>Développeur d'application web avec une solide experience. J'ai eu l'occasion de travailler pour les clients suivants :\n</p>\n<div class=\"g-grid size-100\">\n    <div class=\"g-block size-100\">\n        <ul>\n            <li>\n                Orange <span class=\"job-desc\">Developpement webmail PHP</span>\n            </li>\n            <li>\n                SFR <span class=\"job-desc\">Developpement Web/Wap</span>\n            </li>\n            <li>\n    Vizzavi <span class=\"job-desc\">Developpement Web/Wap Java PHP</span>\n            </li>\n            <li>\nLa cité des sciences et de l'industrie <span class=\"job-desc\">Developpement Java (outil de mailing list)</span>\n            </li>\n            <li>\nFullsix <span class=\"job-desc\">Developpement Java</span>\n            </li>\n            <li>\nBHV <span class=\"job-desc\">Gestion de projet ecommerce - Pilotage</span>\n            </li>\n   <li>\nGaleries Lafayettes <span class=\"job-desc\">Gestion de l'équipe de maintenance du site ecommerce</span>\n            </li>\n        </ul>\n    </div>\n   \n</div>"
+          title: Experiences
+        -
+          content: "<p>Je maitrise les technologies suivantes : </p>\n<div class=\"g-grid size-100\">\n    <div class=\"g-block size-50\">\n        <ul>\n            <li>Php</li>\n            <li>Java</li>\n            <li>Javascript</li>\n            <li>Python</li>\n        </ul>\n    </div>\n    <div class=\"g-block size-50\">\n        <ul>\n            <li>C++</li>\n            <li>GNU/Linux</li>\n            <li>SQL</li>\n        </ul>\n    </div>\n</div>\n<div>Je peux aussi vous assister sur les problématique marketing (SEO, analytics) ou de design visuel.</div>"
+          title: Comptétences
+        -
+          content: '<p>Farouchement attachés aux idéaux de l''open source et à la protection de vos données ainsi que celles de vos clients,  nous saurons vous proposer les solutions de qualité correspondant le plus à vos besoins.</p>'
+          title: Ethique
+  contentcubes-7850:
+    title: 'Content Cubes'
+    attributes:
+      items:
+        -
+          image: 'gantry-media://above/img01.jpeg'
+          imageposition: left
+          label: Featured
+          title: 'Gantry 5 Won "Best Framework System" at J and Beyond 2016 '
+          tags:
+            -
+              icon: 'fa fa-tag'
+              link: '#'
+              target: _self
+              text: 'Design Studio'
+            -
+              icon: 'fa fa-tag'
+              link: '#'
+              target: _self
+              text: Photo
+          link: 'http://gantry.org/blog/gantry5-wins-joscar'
+          linktext: '&rarr;'
+          buttonclass: ''
+          buttontarget: _self
+          name: 'Item 1'
+        -
+          image: 'gantry-media://above/img02.jpeg'
+          imageposition: right
+          label: Featured
+          title: 'Gantry 5 Has Been Downloaded Over Half a Million Times'
+          tags:
+            -
+              icon: 'fa fa-tag'
+              link: '#'
+              target: _self
+              text: 'Graphic Design'
+            -
+              icon: 'fa fa-tag'
+              link: '#'
+              target: _self
+              text: 'Website Creation'
+          link: 'http://gantry.org'
+          linktext: '&rarr;'
+          buttonclass: ''
+          buttontarget: _self
+          name: 'Item 2'
+  custom-7658:
+    title: 'Customer Testimonials'
+    attributes:
+      enabled: 0
+      html: "<div class=\"fp-testimonials\">\n    <blockquote>\n        <img src=\"gantry-media://testimonials/face.jpg\" alt=\"Avatar\" class=\"g-img-circle\" height=\"80\" width=\"80\">\n        <p class=\"h3\">\"Helium is a beautiful, free theme made by the RocketTheme team in appreciation of the incredible Gantry community.\"</p>\n        <footer>Andy Miller</footer>\n    </blockquote>\n</div>"
+    block:
+      variations: center
