@@ -67,7 +67,7 @@ $bustedorange: #e59825;
     color: $bustedorange;
 }
 
-@media all and (max-width: $breakpoints-desktop-container) and (min-width: $breakpoints-tablet-container) {
+@media all and (max-width: $breakpoints-large-desktop-container) and (min-width: $breakpoints-tablet-container) {
   .g-home-particles.g-helium-style #g-header {
     margin-top: -17rem;
   }
